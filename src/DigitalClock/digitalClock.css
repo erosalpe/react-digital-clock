@@ -1,0 +1,10 @@
+.clock-container{
+    backdrop-filter: blur(20px);
+    border-radius: 50px;
+    width: 80vw;
+}
+
+.clock{
+    text-shadow: 5px 5px 5px rgb(0, 0, 0, 0.6);
+    font-size: 5rem;
+}
