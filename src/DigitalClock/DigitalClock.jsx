@@ -18,13 +18,13 @@ function DigitalClock(){
     useEffect(() =>{
         const currentHour = time.getHours();
         if(currentHour >= 21 || currentHour < 6){
-            document.body.style.backgroundImage = 'url(public/MFujiNight.webp)';
+            document.body.style.backgroundImage = 'url(/MFujiNight.webp)';
         } else {
-            document.body.style.backgroundImage = 'url(public/MFujiNoon.webp)';
+            document.body.style.backgroundImage = 'url(/MFujiNoon.webp)';
         }
 
         return () => {
-            document.body.style.backgroundImage = 'url(public/MFujiNoon.webp)';
+            document.body.style.backgroundImage = 'url(/MFujiNoon.webp)';
         }
     }, [time]);
 
